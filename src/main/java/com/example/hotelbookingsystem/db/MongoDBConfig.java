@@ -1,5 +1,6 @@
-package com.example.hotelbookingsystem;
+package com.example.hotelbookingsystem.db;
 
+import com.example.hotelbookingsystem.model.User;
 import com.example.hotelbookingsystem.enums.GRANTS;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;

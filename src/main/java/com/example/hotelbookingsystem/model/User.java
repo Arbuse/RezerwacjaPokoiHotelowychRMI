@@ -1,12 +1,13 @@
-package com.example.hotelbookingsystem;
+package com.example.hotelbookingsystem.model;
 
 import com.example.hotelbookingsystem.enums.GRANTS;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Document(collection = "users")
-public class User {
+public class User implements Serializable {
     private long id;
 
     private GRANTS permission;
@@ -58,8 +59,8 @@ public class User {
         return reservationList;
     }
 
-    public void setReservationList(Reservation reservation) {
-        reservationList.add(reservation);
+    public boolean setReservationList(Reservation reservation) {
+        return reservationList.add(reservation);
     }
 
     @Override

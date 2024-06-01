@@ -26,6 +26,12 @@
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
             <version>3.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-remoting</artifactId>
+            <version>1.2.9</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
